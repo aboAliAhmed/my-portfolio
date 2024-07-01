@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
 import { LiaDownloadSolid } from 'react-icons/lia'
+import { MdWavingHand } from 'react-icons/md'
 
 export default function Boi() {
   return (
@@ -8,12 +9,18 @@ export default function Boi() {
       className="flex flex-col justify-start items-center min-h-[100vh] max-h-fit pt-[28vh] text-zinc-900 dark:text-white text-center"
       id="home"
     >
-      <p className="text-[16px] mb-3">{`Hi, I'm`}</p>
+      <p className="flex items-center gap-2 text-[16px] mb-3">
+        <MdWavingHand className='text-yellow-400 text-2xl animate-bounce'/>
+        {`Hi, I'm`}
+      </p>
       <h1 className="text-zinc-500 dark:text-white font-bold text-4xl">
         Ahmed Beasar
       </h1>
-      <p className="text-zinc-900 dark:text-white tracking-[.1em] text-[16px] opacity-85 mb-6">
-          Frontend Developper
+      <p className="dark:text-white font-bold tracking-[.1em] text-[16px] opacity-85 mb-6">
+        <span className='text-[#35211f] text-lg'>&lt;</span>
+        <span className='text-[#224a9b] dark:text-[#0e1c39] mr-1'>Frontend</span>
+        <span className='text-[#3eb58d] dark:text-[#88cdb6]'>Developper</span>
+        <span className='text-[#35211f]'> /&gt;</span>
       </p>
       <a 
         download
