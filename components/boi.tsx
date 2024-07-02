@@ -1,9 +1,33 @@
-import React from 'react'
-import { FaFacebook, FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
-import { LiaDownloadSolid } from 'react-icons/lia'
-import { MdWavingHand } from 'react-icons/md'
+import { FaFacebook, FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import { LiaDownloadSolid } from 'react-icons/lia';
+import { MdWavingHand } from 'react-icons/md';
+import { useEffect, useState } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
+
 
 export default function Boi() {
+  const [showTopButton, setShowTopButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowTopButton(true);
+      } else {
+        setShowTopButton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div 
       className="flex flex-col justify-start items-center min-h-[100vh] max-h-fit pt-[28vh] text-zinc-900 dark:text-white text-center"
@@ -60,6 +84,14 @@ export default function Boi() {
           <FaWhatsapp className="w-10 h-10" />
         </a>
       </div>
+      {showTopButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-10 right-10 bg-zinc-500 text-white p-3 rounded-full hover:bg-zinc-600 dark:bg-zinc-700 dark:text-white dark:hover:bg-zinc-800"
+        >
+          <FaArrowUp />
+        </button>
+      )}
     </div>
   )
 }

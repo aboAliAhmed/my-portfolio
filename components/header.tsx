@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 
 export default function Header() {
   return ( 
-    <header className='bg-zinc-200 dark:bg-zinc-800/80 shadow-sm shadow-zinc-500 dark:shadow-zinc-800 flex justify-between items-center w-full h-fit p-3 pl-16 fixed z-10'>
+    <header className='bg-zinc-700/20 dark:bg-zinc-800/80 shadow-sm shadow-zinc-500 dark:shadow-zinc-800 flex justify-between items-center w-full h-fit p-3 pl-16 fixed z-10'>
       <div className='flex flex-col'>
         <a 
           href='#home'
