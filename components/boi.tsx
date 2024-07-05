@@ -23,8 +23,7 @@ export default function Boi() {
         <span className='text-[#35211f]'> /&gt;</span>
       </p>
       <a 
-        download
-        href="/en/Fronted_Dev_Ahmed_beasar.pdf"
+        href="https://drive.google.com/uc?export=download&id=10W551SGVnH3ug79pER1-Iu1F2SyxJaU8"
         className="bg-zinc-500 text-white hover:bg-zinc-600 dark:bg-zinc-200 dark:text-zinc-900 dark:hover:bg-zinc-300 flex items-center rounded-[26px] mt-6"
       >
         <span className="ml-3">Download CV</span>
