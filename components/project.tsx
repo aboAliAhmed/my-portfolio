@@ -1,6 +1,7 @@
-import { BiLogoMongodb } from "react-icons/bi";
+import { BiLogoMongodb, BiLogoPostgresql } from "react-icons/bi";
 import { CiGlobe } from "react-icons/ci";
 import { FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
 import { SiExpress, SiTailwindcss } from "react-icons/si";
 
 export default function Projects() {
@@ -54,6 +55,47 @@ export default function Projects() {
               <SiExpress className="text-[#171918]"/>
               <FaNodeJs className="text-[#658d3b]"/>
               <BiLogoMongodb className="text-[#00dc63]"/>
+              <SiTailwindcss className="text-[#36b8f1]"/>
+            </p>
+          </div>
+        </div>
+        <div
+          className="relative block text-center w-[300px] h-[300px] sm:w-[500px] sm:h-[370px] mx-auto mt-5"
+        >
+          <img 
+            src={'/images/disdis.png'} 
+            alt="" 
+            className="bg-white absolute w-full h-full rounded-3xl mx-auto p-2 left-1/2 transform translate-x-[-50%]"
+          />
+          <div
+            className="
+              bg-gradient-to-r from-[#eab30870] via-[#ef444470] to-[#84cc1670] absolute flex flex-col justify-between items-center w-full h-full rounded-3xl opacity-0 hover:opacity-100 left-1/2 transform translate-x-[-50%] py-5
+            "
+          >
+            <h2 className="bg-zinc-50 text-zinc-800 text-2xl w-fit rounded-[30px] p-3 z-[2]" >
+              DisDis
+            </h2>
+            <div className="flex justify-around w-full mt-[-70px] sm:mt-[-130px]">
+              <a 
+                href="https://github.com/aboAliAhmed/DisDis" 
+                target="_blanck"
+                className="bg-zinc-50 text-zinc-800 flex items-center gap-2 font-semibold rounded-[30px] w-fit p-4 z-[2]"
+              >
+                Code
+                <FaGithub className="bg-black text-white rounded-full w-6 h-6"/>
+              </a>
+              <a 
+                href="https://dis21.up.railway.app" 
+                target="_blank" 
+                className="bg-zinc-50 text-zinc-800 flex items-center gap-2 font-semibold rounded-[30px] w-fit p-4 z-[2]"
+              >
+                Demo
+                <CiGlobe className="bg-zinc-950 text-white rounded-full w-6 h-6"/>
+              </a>
+            </div>
+            <p className="bg-zinc-50 text-3xl flex justify-around w-[90%] rounded-3xl mx-5 py-2 z-[2]">
+              <RiNextjsFill />
+              <BiLogoPostgresql className="text-cyan-700"/>
               <SiTailwindcss className="text-[#36b8f1]"/>
             </p>
           </div>
