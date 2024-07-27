@@ -1,7 +1,7 @@
 import Boi from "@/components/boi";
 import ContactUs from "@/components/contact-us";
 import Header from "@/components/header";
-import Projects from "@/components/project";
+import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 
 export default function Home() {

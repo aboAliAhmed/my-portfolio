@@ -10,7 +10,7 @@ export default function Skills() {
       id="skills"
       className="flex flex-col items-center gap-10 w-full min-h-[100vh] max-h-fit pt-20 mb-5" 
     >
-      <h2 className="bg-zinc-500 dark:bg-zinc-800/20 text-white font-semibold sm:text-3xl capitalize rounded-[30px] py-3 px-5">
+      <h2 className="bg-zinc-500 dark:bg-zinc-800/80 text-white font-semibold sm:text-3xl capitalize rounded-[30px] py-3 px-5">
         skills
       </h2>
       <p 

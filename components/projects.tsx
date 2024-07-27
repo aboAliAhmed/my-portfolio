@@ -13,7 +13,7 @@ export default function Projects() {
       id="project"
     >
       <h1 
-        className="bg-zinc-500 text-white dark:bg-zinc-700 w-fit font-semibold sm:text-2xl text-center rounded-[30px] mx-auto py-3 px-6"
+        className="bg-zinc-500 text-white dark:bg-zinc-800/80 w-fit font-semibold sm:text-2xl text-center rounded-[30px] mx-auto py-3 px-6"
       >
         Sample of My Projects
       </h1>
@@ -23,7 +23,7 @@ export default function Projects() {
           Name="Eyad-Store"
           Github="https://github.com/aboAliAhmed/eyad-store"
           Demo="https://eyad-store.onrender.com/"
-          className="bg-gradient-to-r from-[#eab30870] via-[#ef444470] to-[#84cc1670] absolute flex flex-col justify-between items-center w-full h-full rounded-3xl opacity-0 hover:opacity-100 left-1/2 transform translate-x-[-50%] py-5 mb-5"
+          className="bg-gradient-to-r from-[#74963c70] via-[#ffffff70] to-[#639a0970] absolute flex flex-col justify-between items-center w-full h-full rounded-3xl opacity-0 hover:opacity-100 left-1/2 transform translate-x-[-50%] py-5 mb-5"
           Icons={[FaReact, SiExpress, FaNodeJs, BiLogoMongodb, SiTailwindcss]}
         />
         <OneProject
