@@ -5,8 +5,8 @@ import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 
 export default function Home() {
-  return (
-    <main className="bg-zinc-100 dark:bg-zinc-400/50">
+  return ( 
+    <main className="bg-zinc-100 dark:bg-zinc-400/50 bg-gradient-lbg dark:bg-gradient-dbg animate-gradient">
       <Header />
       <Boi />
       <Skills />

@@ -48,7 +48,8 @@ export default function ContactUs() {
             type="text" 
             name="name"
             placeholder="Name"
-            className="relative border-2 border-zinc-600 outline-none sm:w-[500px] rounded-xl py-3 pl-2 leading-10 placeholder:text-stone-500"
+            className="relative border-2 border-zinc-600 outline-none sm:w-[500px] rounded-xl py-3 pl-2 leading-10 placeholder:text-stone-500
+            dark:placeholder:text-stone-100"
           />
           <label className="bg-zinc-600 text-center text-white w-20 p-2 rounded-xl">  
             Name
@@ -59,7 +60,7 @@ export default function ContactUs() {
             type="email" 
             name="email"
             placeholder="Email"
-            className="relative border-2 border-zinc-600 outline-none sm:w-[500px] w-full rounded-xl py-3 pl-2 leading-10 placeholder:text-stone-500"
+            className="relative border-2 border-zinc-600 outline-none sm:w-[500px] w-full rounded-xl py-3 pl-2 leading-10 placeholder:text-stone-500 dark:placeholder:text-stone-100"
           />
           <label className="bg-zinc-600 text-center text-white w-20 p-2 rounded-xl">  
             Email
@@ -68,7 +69,7 @@ export default function ContactUs() {
         <div className="flex justify-between items-center relative w-full min-w-[200px]">
           <textarea
             name='message'
-            className="peer relative border-2 border-zinc-600 outline-none sm:w-[500px] w-full h-52 rounded-xl py-3 pl-2 leading-10 !resize-none placeholder:text-stone-500"
+            className="peer relative border-2 border-zinc-600 outline-none sm:w-[500px] w-full h-52 rounded-xl py-3 pl-2 leading-10 !resize-none placeholder:text-stone-500 dark:placeholder:text-stone-100"
             placeholder="Content"
           />
           <label className="bg-zinc-600 text-white w-20 p-2 rounded-xl ml-4">

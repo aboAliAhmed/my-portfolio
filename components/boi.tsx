@@ -35,26 +35,26 @@ export default function Boi() {
           target='_blank' 
           className="text-zinc-500 dark:text-white hover:text-zinc-800 dark:hover:bg-black rounded-full"
         >
-          <FaGithub className="w-10 h-10" />
+          <FaGithub className="w-10 h-10 hover:rotate-6" />
         </a>
         <a
           href={'https://www.linkedin.com/in/ahmed-besar-944220220/'} 
           target='_blank' 
           className="text-zinc-500 dark:text-white hover:text-sky-600 dark:hover:text-sky-800"
         >
-          <FaLinkedinIn className="w-9 h-9 p-[2px]" />
+          <FaLinkedinIn className="w-9 h-9 p-[2px] hover:rotate-[-6deg]" />
         </a>
         <a 
           href={'https://www.facebook.com/ahmedabderrahmanbesar/'} 
           target='_blank' 
           className="text-zinc-500 hover:text-blue-700 dark:text-white dark:hover:text-blue-800/90 "
         >
-          <FaFacebook className="w-10 h-10 rounded-full" />
+          <FaFacebook className="w-10 h-10 rounded-full hover:rotate-6" />
         </a>
         <a
           href={'http://wa.me/+201274625521'} 
           target='_blank' 
-          className="bg-white text-zinc-500 hover:text-white hover:bg-green-500 dark:bg-transparent dark:text-white dark:hover:text-zinc-200 dark:hover:bg-[#0cc042] rounded-full rounded-bl-none" 
+          className="bg-transparent text-zinc-500 hover:text-white hover:bg-green-500 dark:bg-transparent dark:text-white dark:hover:text-zinc-200 dark:hover:bg-[#0cc042] rounded-full rounded-bl-none" 
         >
           <FaWhatsapp className="w-10 h-10" />
         </a>
