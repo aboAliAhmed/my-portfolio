@@ -86,6 +86,7 @@ const config = {
       backgroundImage: {
         'gradient-lbg': 'linear-gradient(90deg, #ccffff, #ffffcc, #ffcccc)',
         'gradient-dbg': 'linear-gradient(90deg, #575659, #567666, #575659)',
+        'gradient-skillBg': 'linear-gradient(90deg, #977116, #ffffff, #257391)',
       },
     },
   },

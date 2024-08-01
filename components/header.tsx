@@ -23,19 +23,19 @@ export default function Header() {
         <div className='text-zinc-800 dark:text-zinc-100 hidden sm:flex justify-between items-center gap-2 underline'>
           <a 
             href='#skills' 
-            className='hover:bg-zinc-300 dark:hover:bg-zinc-600/50 p-1 rounded-lg'
+            className='hover:bg-zinc-300 dark:hover:bg-zinc-600/50 p-1 rounded-lg hover:scale-105'
           >
             Skills
           </a>
           <a 
             href='#project' 
-            className='hover:bg-zinc-300 dark:hover:bg-zinc-600/50 p-1 rounded-lg'
+            className='hover:bg-zinc-300 dark:hover:bg-zinc-600/50 p-1 rounded-lg hover:scale-105'
           >
             Projects
           </a>
           <a 
             href='#contactUs' 
-            className='hover:bg-zinc-300 dark:hover:bg-zinc-600/50 p-1 rounded-lg'
+            className='hover:bg-zinc-300 dark:hover:bg-zinc-600/50 p-1 rounded-lg hover:scale-105'
           >
             Contact Us
           </a>

@@ -39,7 +39,7 @@ export default function ContactUs() {
   return (
     <div className="min-h-[95vh] max-h-fit pt-20" id="contactUs">
       <ToastContainer />
-      <p className="bg-zinc-500 dark:bg-zinc-800/80 text-white text-2xl w-fit rounded-[40px] mx-auto p-3">
+      <p className="bg-zinc-500 dark:bg-zinc-800/80 text-white text-2xl w-fit rounded-[40px] mx-auto p-3 hover:scale-110">
         You can contact me on
       </p>
       <form ref={form} onSubmit={sendEmail} className="p-5 flex flex-col gap-4 w-fit mt-24 mx-auto">

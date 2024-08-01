@@ -13,7 +13,7 @@ export default function Projects() {
       id="project"
     >
       <h1 
-        className="bg-zinc-500 text-white dark:bg-zinc-800/80 w-fit font-semibold sm:text-2xl text-center rounded-[30px] mx-auto py-3 px-6"
+        className="bg-zinc-500 text-white dark:bg-zinc-800/80 w-fit font-semibold sm:text-2xl text-center rounded-[30px] mx-auto py-3 px-6 hover:scale-110"
       >
         Sample of My Projects
       </h1>
