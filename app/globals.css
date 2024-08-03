@@ -78,3 +78,7 @@
   html {
     scroll-behavior: smooth;
   }
+
+  .image-slider-btn:focus-visible {
+    outline: auto;
+  }

@@ -77,7 +77,7 @@ export default function ContactUs() {
           </label>
         </div>
         <button
-          className={`flex justify-center gap-2 text-md w-full select-none rounded-lg ${sending ? 'bg-stone-600' : 'bg-stone-900'}  py-3 px-6 text-center align-middle font-sans font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none dark:bg-zinc-200 dark:text-stone-800`}
+          className={`flex justify-center gap-2 text-md w-full select-none rounded-lg ${sending ? 'bg-stone-600' : 'bg-stone-900'}  py-3 px-6 text-center align-middle font-sans font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none dark:bg-zinc-200 dark:text-stone-800 hover:bg-stone-900/90`}
           type="submit"
         >
           {sending ?

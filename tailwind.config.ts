@@ -69,6 +69,11 @@ const config = {
             'background-position': 'right center',
           },
         },
+        squish :{
+          '50%': {
+            'scale': '1.4 0.6'
+          }
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -79,13 +84,14 @@ const config = {
         },
       },
       animation: {
+        arow: 'squish 500ms ease-in-out',
         gradient: 'gradient 20s linear infinite',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.1s ease-out",
       },
       backgroundImage: {
         'gradient-lbg': 'linear-gradient(90deg, #ccffff, #ffffcc, #ffcccc)',
-        'gradient-dbg': 'linear-gradient(90deg, #575659, #567666, #575659)',
+        'gradient-dbg': 'linear-gradient(90deg, #575659, #40325D, #23006a)',
         'gradient-skillBg': 'linear-gradient(90deg, #977116, #ffffff, #257391)',
       },
     },

@@ -45,7 +45,7 @@ export default function Boi() {
           <FaLinkedinIn className="w-9 h-9 p-[2px] hover:rotate-[-6deg]" />
         </a>
         <a 
-          href={'https://www.facebook.com/ahmedabderrahmanbesar/'} 
+          href={'https://www.facebook.com/abo3krema/'} 
           target='_blank' 
           className="text-zinc-500 hover:text-blue-700 dark:text-white dark:hover:text-blue-800/90 "
         >

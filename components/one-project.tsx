@@ -1,65 +1,104 @@
-import { motion } from 'framer-motion';
+"use client"
+
 import { FaGithub } from 'react-icons/fa';
 import { CiGlobe } from 'react-icons/ci';
-import { IconType } from 'react-icons';
-
+import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot} from 'lucide-react';
+import { useState } from 'react';
 
 interface OneProjectProps {
-  Image: string;
-  Name: string;
+  images: {
+    url: string,
+    alt: string
+  }[];
   Github: string;
   Demo: string;
-  className: string;
-  Icons: IconType[];
 }
 
 const OneProject: React.FC<OneProjectProps> = ({
-  Image,
-  Name,
+  images,
   Github,
   Demo,
-  className,
-  Icons,
-}) => {
+}: OneProjectProps) => {
+  const [imageIndex, setImageIndex] = useState(0);
+
+  function goLeft () {
+    setImageIndex(index => { 
+      if (index === 0) return images.length - 1;
+      return index - 1;
+    }) 
+  }
+    
+  function goRight () {
+    setImageIndex(index => { 
+      if (index === images.length - 1) return 0;
+      return index + 1;
+    }) 
+  }
+
 
   return (
     <div
-      className='relative block text-center w-[300px] h-[300px] sm:w-[500px] sm:h-[370px] mx-auto my-10'
+      className='relative block bg-rose-600/20 text-center w-[75vw] h-[230px] sm:w-[500px] sm:h-[370px] mx-auto my-10 p-2'
     >
-      <img 
-        src={Image} 
-        alt="" 
-        className="bg-white absolute w-full h-full rounded-3xl mx-auto p-2 left-1/2 transform translate-x-[-50%]"
-      />
-      <div
-        className={`${className}`}
+      <div className='w-full h-full flex overflow-hidden'>
+        {images.map((image, i) => (
+          <img 
+            key={image.url}
+            src={image.url}
+            alt={image.alt}
+            aria-hidden={imageIndex !== i}
+            style={{translate: `${-100 * imageIndex}%`, transition: "translate 300ms ease-in"}}
+            className="object-cover w-[75vw] h-[200px] sm:w-[500px] sm:h-[309px] rounded block grow shrink phScroll" 
+          />
+        ))}
+      </div>
+      <button 
+        onClick={goLeft}
+        aria-label='Left Button'
+        className='image-slider-btn absolute block p-4 cursor-pointer w-8 h-full z-10 top-0 left-0 bg-black/20 hover:bg-black/70 transition-colors duration-200  focus-visible:bg-black/20'
+        >
+        <ArrowBigLeft className='stroke-white relative right-[10px] hover:animate-arow focus-visible:animate-arow' />
+      </button>
+      <button 
+        onClick={goRight}
+        aria-label='Right Button'
+        className='image-slider-btn absolute block p-4 cursor-pointer w-8 h-full z-10 top-0 right-0 bg-black/20 hover:bg-black/70 transition-colors duration-200 focus-visible:bg-black/20'
       >
-        <h2 className="bg-zinc-50 text-zinc-800 text-2xl w-fit rounded-[30px] p-3 z-[2]" >
-          {Name}
-        </h2>
-        <div className="flex justify-around w-full mt-[-70px] sm:mt-[-130px]">
-          <a 
-            href={Github} 
-            target="_blank"
-            className="bg-zinc-50 text-zinc-800 flex items-center gap-2 font-semibold rounded-[30px] w-fit p-4 z-[2]"
+        <ArrowBigRight className='stroke-white relative right-[10px] hover:animate-arow focus-visible:animate-arow' />
+      </button>
+      <div className='absolute flex left-1/2 translate-x-[-50%] translate-y-[-25px]'>
+        {images.map((_, index) => (
+          <button
+            key={index}
+            style={{transition: 'scale 100ms ease-in-out'}}
+            onClick={() => setImageIndex(index)}
+            aria-label={`View Image ${index + 1}`}
+            className='block cursor-pointer w-4 h-4'
           >
-            Code
-            <FaGithub className="bg-black text-white rounded-full w-6 h-6"/>
-          </a>
-          <a 
-            href={Demo} 
-            target="_blank" 
-            className="bg-zinc-50 text-zinc-800 flex items-center gap-2 font-semibold rounded-[30px] w-fit p-4 z-[2]"
-          >
-            Demo
-            <CiGlobe className="bg-zinc-950 text-white rounded-full w-6 h-6"/>
-          </a>
-        </div>
-        <div className="bg-zinc-50 text-3xl flex justify-around w-[90%] rounded-3xl mx-5 py-2 z-[2]">
-          {Icons.map((Icon, index) => (
-            <Icon key={index} className="text-[#149eca]" />
-          ))}
-        </div>
+            {index === imageIndex 
+              ? <CircleDot aria-hidden className='fill-zinc-300 dark:fill-zinc-600 w-full h-full focus-visible:scale-110' /> 
+              : <Circle aria-hidden className='fill-zinc-200 dark:fill-zinc-700 w-full h-full'/>
+            }
+          </button>
+        ))}
+      </div>
+      <div className="absolute flex justify-between gap-1 bottom-0 left-0 px-6 w-full text-zinc-800">
+        <a 
+          href={Github} 
+          target="_blank"
+          className="bg-zinc-100/10 flex items-center font-semibold rounded-full w-fit p-4 z-[2]"
+        >
+          <span className='p-0'>&lt;</span>
+          <span>...</span>
+          <span>&gt;</span>
+        </a>
+        <a 
+          href={Demo} 
+          target="_blank" 
+          className="bg-zinc-100/10 flex items-center font-semibold rounded-[30px] w-fit p-4 z-[2]"
+        >
+          <CiGlobe className="bg-transparent text-black rounded-full w-6 h-6"/>
+        </a>
       </div>
     </div>
   );
