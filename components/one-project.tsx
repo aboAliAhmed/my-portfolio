@@ -38,7 +38,7 @@ const OneProject: React.FC<OneProjectProps> = ({
 
   return (
     <div
-      className='relative block bg-rose-600/20 text-center w-[75vw] h-[230px] sm:w-[500px] sm:h-[370px] mx-auto my-10 p-2'
+      className='relative block bg-rose-600/20 text-center w-[75vw] h-[230px] sm:w-[500px] sm:h-[370px] mx-auto my-10 p-2 rounded'
     >
       <div className='w-full h-full flex overflow-hidden'>
         {images.map((image, i) => (
