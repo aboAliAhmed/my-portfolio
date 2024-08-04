@@ -66,22 +66,6 @@ const OneProject: React.FC<OneProjectProps> = ({
       >
         <ArrowBigRight className='stroke-white relative right-[10px] hover:animate-arow focus-visible:animate-arow' />
       </button>
-      <div className='absolute flex left-1/2 translate-x-[-50%] translate-y-[-25px]'>
-        {images.map((_, index) => (
-          <button
-            key={index}
-            style={{transition: 'scale 100ms ease-in-out'}}
-            onClick={() => setImageIndex(index)}
-            aria-label={`View Image ${index + 1}`}
-            className='block cursor-pointer w-4 h-4'
-          >
-            {index === imageIndex 
-              ? <CircleDot aria-hidden className='fill-zinc-300 dark:fill-zinc-600 w-full h-full focus-visible:scale-110' /> 
-              : <Circle aria-hidden className='fill-zinc-200 dark:fill-zinc-700 w-full h-full'/>
-            }
-          </button>
-        ))}
-      </div>
       <div className="absolute flex justify-between gap-1 bottom-0 left-0 px-6 w-full text-zinc-800">
         <a 
           href={Github} 
@@ -99,6 +83,22 @@ const OneProject: React.FC<OneProjectProps> = ({
         >
           <CiGlobe className="bg-transparent text-black rounded-full w-6 h-6"/>
         </a>
+      </div>
+      <div className='absolute flex left-1/2 translate-x-[-50%] translate-y-[-25px]'>
+        {images.map((_, index) => (
+          <button
+            key={index}
+            style={{transition: 'scale 100ms ease-in-out'}}
+            onClick={() => setImageIndex(index)}
+            aria-label={`View Image ${index + 1}`}
+            className='block cursor-pointer w-4 h-4'
+          >
+            {index === imageIndex 
+              ? <CircleDot aria-hidden className='fill-zinc-300 dark:fill-zinc-600 w-full h-full focus-visible:scale-110' /> 
+              : <Circle aria-hidden className='fill-zinc-200 dark:fill-zinc-700 w-full h-full'/>
+            }
+          </button>
+        ))}
       </div>
     </div>
   );
