@@ -1,8 +1,8 @@
-import Boi from "@/components/boi";
-import ContactUs from "@/components/contact-us";
-import Header from "@/components/header";
-import Projects from "@/components/projects";
-import Skills from "@/components/skills";
+import Boi from "@/components/pages/boi";
+import ContactUs from "@/components/pages/contact-us";
+import Header from "@/components/pages/header";
+import Projects from "@/components/pages/projects";
+import Skills from "@/components/pages/skills";
 
 export default function Home() {
   return ( 

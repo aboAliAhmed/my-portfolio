@@ -2,7 +2,7 @@ import { BiLogoMongodb, BiLogoPostgresql } from "react-icons/bi";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiExpress, SiTailwindcss } from "react-icons/si";
-import OneProject from "./one-project";
+import OneProject from "@/components/one-project";
 import { FcNext } from "react-icons/fc";
 
 export default function Projects() {

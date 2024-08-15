@@ -1,7 +1,7 @@
 import { FaFacebook, FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { LiaDownloadSolid } from 'react-icons/lia';
 import { MdWavingHand } from 'react-icons/md';
-import ParticleBackground from './ParticleBackground'
+import ParticleBackground from '@/components/ParticleBackground'
 
 export default function Boi() {
 
@@ -25,7 +25,8 @@ export default function Boi() {
         <span className='text-[#35211f] dark:text-[#d2a39f]'> /&gt;</span>
       </p>
       <a 
-        href="https://drive.google.com/uc?export=download&id=10W551SGVnH3ug79pER1-Iu1F2SyxJaU8"
+        href="https://drive.google.com/file/d/1KqGuMmUX91FiylUcurJETDo_MN7BYijj/view?usp=sharing"
+        target='blanck'
         className="bg-zinc-500 text-white hover:bg-zinc-600 dark:bg-zinc-200 dark:text-zinc-900 dark:hover:bg-zinc-300 flex items-center rounded-[26px] mt-6"
       >
         <span className="ml-3">Download CV</span>
@@ -47,7 +48,7 @@ export default function Boi() {
           <FaLinkedinIn className="w-9 h-9 p-[2px] hover:rotate-[-6deg]" />
         </a>
         <a 
-          href={'https://www.facebook.com/profile.php?id=61563822940005'} 
+          href={'https://www.facebook.com/profile.php?id=61563822940005non'} 
           target='_blank' 
           className="text-zinc-500 hover:text-blue-700 dark:text-white dark:hover:text-blue-800/90 "
         >

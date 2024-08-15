@@ -20,7 +20,7 @@ export default function Skills() {
           borderEndEndRadius: '50px 20px'
         }}
       >
-        {`I'm a MERN-Stack Developer, with good basis in javascript, c and python. I'm aquainted with OOP and SOLID principles.`}
+        {`I'm a MERN-Stack Developer with a strong foundation in JavaScript and ES6+. I'm well-versed in OOP and SOLID principles.`}
       </p>
       <div className="flex flex-wrap justify-evenly items-center dark:text-zinc-900 sm:w-[90vw] md:w-[80vw] gap-x-3 gap-y-10 w-full sm:p-4">
         <OneSkill 
