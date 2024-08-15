@@ -21,9 +21,9 @@ export default function ContactUs() {
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID || '', 
         process.env.NEXT_PUBLIC_TEMPLATE_ID || '', 
-        form.current, 
-        process.env.NEXT_PUBLIC_USER_ID || ''
-      )
+        form.current, {
+        publicKey: process.env.NEXT_PUBLIC_USER_ID || ''
+        })
       .then(
         () => {
           toast.success('Message sent successfully!', { toastId: 'success-toast'});
