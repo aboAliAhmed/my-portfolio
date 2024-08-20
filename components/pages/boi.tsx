@@ -7,7 +7,7 @@ export default function Boi() {
 
   return (
     <div 
-      className="flex flex-col justify-start items-center min-h-[100vh] max-h-fit pt-[28vh] text-zinc-900 dark:text-white text-center"
+      className="flex flex-col justify-center items-center min-h-[100vh] max-h-fit text-zinc-900 dark:text-white text-center"
       id="home"
     >
       <ParticleBackground />
