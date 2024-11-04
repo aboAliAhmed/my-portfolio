@@ -31,7 +31,11 @@ export default function Projects() {
           />
         </div>
         <OneProject
-          images={[{url: "/images/disdis.png", alt: "Chat-app-1"}]}
+          images={[
+            {url: "/images/disdis/disdis-1.png", alt: "Chat-app-1"},
+            {url: "/images/disdis/disdis-2.png", alt: "Chat-app-2"},
+            {url: "/images/disdis/disdis-3.png", alt: "Chat-app-3"}
+          ]}
           Github="https://github.com/aboAliAhmed/DisDis"
           Demo="https://dis-dis-git-main-aboaliahmeds-projects.vercel.app/"
         />

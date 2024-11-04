@@ -38,7 +38,7 @@ const OneProject: React.FC<OneProjectProps> = ({
 
   return (
     <div
-      className='relative block bg-rose-600/20 text-center w-[75vw] h-[230px] sm:w-[500px] sm:h-[370px] mx-auto my-10 p-2 rounded'
+      className='relative block bg-rose-600/20 text-center w-[75vw] h-[230px] sm:w-[500px] sm:h-[320px] mx-auto my-10 p-2 rounded'
     >
       <div className='w-full h-full flex overflow-hidden'>
         {images.map((image, i) => (
@@ -48,7 +48,7 @@ const OneProject: React.FC<OneProjectProps> = ({
             alt={image.alt}
             aria-hidden={imageIndex !== i}
             style={{translate: `${-100 * imageIndex}%`, transition: "translate 300ms ease-in"}}
-            className="object-cover w-[75vw] h-[200px] sm:w-[500px] sm:h-[309px] rounded block grow shrink phScroll" 
+            className="object-cover w-[75vw] h-[200px] sm:w-[500px] sm:h-[240px] rounded block grow shrink phScroll" 
           />
         ))}
       </div>
