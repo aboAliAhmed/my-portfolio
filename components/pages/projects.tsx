@@ -20,11 +20,13 @@ export default function Projects() {
         <div className="">
           <OneProject
             images={[
-              {url: "/images/eyad/cover1.png", alt: "Eyad-store-1"}, 
-              {url: "/images/eyad/cover2.png", alt: "Eyad-store-2"}, 
-              {url: "/images/eyad/cover3.png", alt: "Eyad-store-3"}, 
-              {url: "/images/eyad/cover4.png", alt: "Eyad-store-4"}, 
-              {url: "/images/eyad/cover5.png", alt: "Eyad-store-5"}, 
+              {url: "/images/eyad/store-1.png", alt: "Eyad-store-1"}, 
+              {url: "/images/eyad/store-2.png", alt: "Eyad-store-2"}, 
+              {url: "/images/eyad/store-3.png", alt: "Eyad-store-3"}, 
+              {url: "/images/eyad/store-4.png", alt: "Eyad-store-4"}, 
+              {url: "/images/eyad/store-5.png", alt: "Eyad-store-5"}, 
+              {url: "/images/eyad/store-6.png", alt: "Eyad-store-6"}, 
+              {url: "/images/eyad/store-7.png", alt: "Eyad-store-7"}, 
             ]}
             Github="https://github.com/aboAliAhmed/eyad-store"
             Demo="https://eyad-store.onrender.com/"
